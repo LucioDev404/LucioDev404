@@ -15,7 +15,7 @@
 
   <text x="415" y="34" text-anchor="middle" font-size="13" fill="#58A6FF" letter-spacing="4">STATS</text>
 
-  <text x="185" y="82" text-anchor="middle" font-size="30" fill="#E6EDF3" filter="url(#sglow)">14<tspan fill="#58A6FF">+</tspan></text>
+  <text x="185" y="82" text-anchor="middle" font-size="30" fill="#E6EDF3" filter="url(#sglow)">16<tspan fill="#58A6FF">+</tspan></text>
   <text x="185" y="106" text-anchor="middle" font-size="12" fill="#8B949E">public commits</text>
 
   <rect x="330" y="55" width="1.5" height="55" fill="#21262D"/>
