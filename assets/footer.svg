@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="120" viewBox="0 0 830 120" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="fline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#1F6FEB"/>
+      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#BC8CFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="30" width="828" height="58" rx="10" fill="#0D1117" stroke="#21262D"/>
+  <rect x="60" y="29" width="710" height="2" fill="url(#fline)"/>
+  <text x="415" y="55" text-anchor="middle" font-size="15" fill="#C9D1D9">status: <tspan fill="#28C840" font-weight="bold">&#9679;</tspan> open to work on interesting things</text>
+  <text x="415" y="76" text-anchor="middle" font-size="12" fill="#58A6FF">github.com/LucioDev404 &#183; Italy</text>
+  <path d="M 300 88 Q 415 118 530 88" fill="none" stroke="url(#fgrad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 300 92 Q 415 122 530 92" fill="none" stroke="url(#fgrad)" stroke-width="1" opacity="0.3"/>
+</svg>

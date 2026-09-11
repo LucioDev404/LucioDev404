@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="250" viewBox="0 0 830 250" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/>
+      <stop offset="0.5" stop-color="#1F6FEB"/>
+      <stop offset="1" stop-color="#BC8CFF"/>
+    </linearGradient>
+    <linearGradient id="glowfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M 26 0 L 0 0 0 26" fill="none" stroke="#151C26" stroke-width="1"/>
+    </pattern>
+    <filter id="softglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- card -->
+  <rect x="1" y="1" width="828" height="248" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="1" y="1" width="828" height="248" rx="14" fill="url(#grid)"/>
+
+  <!-- title bar -->
+  <circle cx="28" cy="26" r="5.5" fill="#FF5F57"/>
+  <circle cx="48" cy="26" r="5.5" fill="#FEBC2E"/>
+  <circle cx="68" cy="26" r="5.5" fill="#28C840"/>
+  <text x="415" y="31" text-anchor="middle" font-size="12" fill="#8B949E">lucio@dev — ~/portfolio</text>
+  <rect x="2" y="44" width="826" height="2" fill="url(#accent)" opacity="0.85"/>
+
+  <!-- terminal content -->
+  <text x="36" y="82" font-size="14" fill="#58A6FF">$ whoami</text>
+  <text x="36" y="106" font-size="17" fill="#E6EDF3" filter="url(#softglow)">&#9656; Lucio Tavanti <tspan fill="#58A6FF">—</tspan> software developer</text>
+
+  <text x="36" y="146" font-size="14" fill="#58A6FF">$ cat focus.txt</text>
+  <text x="36" y="170" font-size="14" fill="#C9D1D9">&#9656; full-stack web <tspan fill="#BC8CFF">&#183;</tspan> systems &amp; automation <tspan fill="#BC8CFF">&#183;</tspan> hardware tinkerer</text>
+
+  <text x="36" y="210" font-size="14" fill="#58A6FF">$ uptime</text>
+  <text x="36" y="232" font-size="14" fill="#8B949E">&#9656; shipping from Italy, continuously</text>
+
+  <!-- blinking cursor -->
+  <rect x="360" y="220" width="9" height="16" fill="#58A6FF">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
