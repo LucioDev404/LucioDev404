@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="130" viewBox="0 0 830 130" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="sbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#BC8CFF"/>
+    </linearGradient>
+    <filter id="sglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="828" height="128" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <rect x="1" y="1" width="828" height="3" rx="2" fill="url(#sbar)"/>
+
+  <text x="415" y="34" text-anchor="middle" font-size="13" fill="#58A6FF" letter-spacing="4">STATS</text>
+
+  <text x="185" y="82" text-anchor="middle" font-size="30" fill="#E6EDF3" filter="url(#sglow)">13<tspan fill="#58A6FF">+</tspan></text>
+  <text x="185" y="106" text-anchor="middle" font-size="12" fill="#8B949E">public repos touched</text>
+
+  <rect x="330" y="55" width="1.5" height="55" fill="#21262D"/>
+
+  <text x="415" y="82" text-anchor="middle" font-size="30" fill="#E6EDF3" filter="url(#sglow)">7</text>
+  <text x="415" y="106" text-anchor="middle" font-size="12" fill="#8B949E">public repos</text>
+
+  <rect x="500" y="55" width="1.5" height="55" fill="#21262D"/>
+
+  <text x="585" y="82" text-anchor="middle" font-size="30" fill="#E6EDF3" filter="url(#sglow)">&gt;1<tspan fill="#BC8CFF">yr</tspan></text>
+  <text x="585" y="106" text-anchor="middle" font-size="12" fill="#8B949E">on GitHub</text>
+
+  <rect x="668" y="55" width="1.5" height="55" fill="#21262D"/>
+
+  <text x="750" y="82" text-anchor="middle" font-size="30" fill="#28C840" filter="url(#sglow)">&#9679;</text>
+  <text x="750" y="106" text-anchor="middle" font-size="12" fill="#8B949E">active now</text>
+</svg>
